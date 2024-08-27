@@ -1,8 +1,10 @@
 import { initializeApp } from "firebase/app";
 import {getAuth} from "firebase/auth";
+require('dotenv').config();
+
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBYGJKQgJVnAPFSg7z2UzW_CUouhpUVWlA",
+  firebaseAPI : process.env.apikey,
   authDomain: "react-netflix-clone-c8b64.firebaseapp.com",
   projectId: "react-netflix-clone-c8b64",
   storageBucket: "react-netflix-clone-c8b64.appspot.com",
